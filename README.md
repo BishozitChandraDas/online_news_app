@@ -1,17 +1,4 @@
-# online_news_app
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# online_news_app
+![1](https://github.com/Bishozit/online_news_app/assets/110930138/6142739b-08f5-4da3-86b7-f140fb9409e1)
+![2](https://github.com/Bishozit/online_news_app/assets/110930138/ebb0d580-c5cf-430a-b1e6-b8966242cf1c)
+![3](https://github.com/Bishozit/online_news_app/assets/110930138/5141f643-a1eb-473f-b27e-e5b7901344ea)
