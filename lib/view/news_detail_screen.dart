@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 
-
 class NewsDetailScreen extends StatefulWidget {
   String newsImage;
   String newsTitle;
@@ -14,8 +13,6 @@ class NewsDetailScreen extends StatefulWidget {
   String newsSource;
   NewsDetailScreen(this.newsImage, this.newsTitle, this.newsDate,
       this.newsAuthor, this.newsDesc, this.newsContent, this.newsSource);
-
-
   @override
   State<NewsDetailScreen> createState() => _NewsDetailScreenState();
 }
@@ -125,12 +122,6 @@ class _NewsDetailScreenState extends State<NewsDetailScreen> {
                 SizedBox(
                   height: Kheight * 0.03,
                 ),
-                // Text('${widget.newsContent}',
-                //     maxLines: 20,
-                //     style: GoogleFonts.poppins(
-                //         fontSize: 15,
-                //         color: Colors.black87,
-                //         fontWeight: FontWeight.w500)),
                 SizedBox(
                   height: Kheight * 0.03,
                 ),

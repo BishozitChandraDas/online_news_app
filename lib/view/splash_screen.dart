@@ -4,7 +4,6 @@ import 'package:online_news_app/view/home/home_screen.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
 
@@ -14,7 +13,6 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
 
-
   @override
   void initState() {
     // TODO: implement initState
@@ -23,9 +21,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Timer(Duration(seconds: 2), () { 
       Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomeScreen()));
     });
-
   }
-  
   
   @override
   Widget build(BuildContext context) {
@@ -48,7 +44,6 @@ class _SplashScreenState extends State<SplashScreen> {
               color: Colors.blue ,
                 size: 40,
             )
-
           ],
         ),
       ),

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:online_news_app/bloc/news_bloc.dart';
-
 import 'package:online_news_app/view/splash_screen.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
@@ -9,7 +8,6 @@ void main() {
   
   runApp(MyApp());
 }
-
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -36,13 +34,8 @@ class MyApp extends StatelessWidget {
   }
 }
 
-
-
 const spinkit = SpinKitChasingDots(
   
   color: Colors.blue,
   size: 40.0,
 );
-
-
-

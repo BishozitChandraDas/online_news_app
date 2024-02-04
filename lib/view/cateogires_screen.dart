@@ -4,11 +4,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
-
 import '../bloc/news_bloc.dart';
 import '../bloc/news_event.dart';
 import '../bloc/news_states.dart';
-
 
 class CategoriesScreen extends StatefulWidget {
   const CategoriesScreen({Key? key}) : super(key: key);
@@ -18,11 +16,8 @@ class CategoriesScreen extends StatefulWidget {
 }
 
 class _CategoriesScreenState extends State<CategoriesScreen> {
-
-
   final format = DateFormat('MMM dd, yyyy');
   String categoryName = 'General' ;
-
 
   List<String> categoriesList = [
     'General',
@@ -37,9 +32,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-
     context.read<NewsBloc>()..add(NewsCategories('categoryName'));
-
   }
   @override
   Widget build(BuildContext context) {
@@ -60,9 +53,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                     return InkWell(
                       onTap: (){
                         categoryName = categoriesList[index] ;
-
                         context.read<NewsBloc>()..add(NewsCategories(categoryName));
-
                         setState(() {});
                       },
                       child: Padding(
@@ -103,7 +94,6 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                       child: ListView.builder(
                           itemCount: state.newsCategoriesList!.articles!.length,
                           itemBuilder: (context , index){
-
                             DateTime dateTime = DateTime.parse(state.newsCategoriesList!.articles![index].publishedAt.toString());
                             return  Padding(
                               padding: const EdgeInsets.only(bottom: 15),
@@ -172,9 +162,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                     ) ;
                 }
               },
-
             )
-
           ],
         ),
       ),
