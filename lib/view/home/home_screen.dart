@@ -10,7 +10,6 @@ import 'package:online_news_app/view/home/widgets/home_app_bar_widget.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
-
 import '../news_detail_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -20,19 +19,15 @@ class HomeScreen extends StatefulWidget {
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
-
 const spinkit2 = SpinKitFadingCircle(
   color: Colors.amber,
   size: 50.0,
 );
 
 
-
-
 class _HomeScreenState extends State<HomeScreen> {
 
   final format = DateFormat('MMMM dd, yyyy');
-
 
   @override
   void initState() {
@@ -40,7 +35,6 @@ class _HomeScreenState extends State<HomeScreen> {
     super.initState();
     context.read<NewsBloc>()..add(FetchNewsChannelHeadlines('bbc-news'));
     context.read<NewsBloc>()..add(NewsCategories('general'));
-
   }
   @override
   Widget build(BuildContext context) {
@@ -79,7 +73,6 @@ class _HomeScreenState extends State<HomeScreen> {
                   ) ;
                 }
               },
-
             ),
           ),
           Padding(
@@ -101,7 +94,6 @@ class _HomeScreenState extends State<HomeScreen> {
                         itemCount: state.newsCategoriesList!.articles!.length,
                         shrinkWrap: true,
                         itemBuilder: (context , index){
-
                           DateTime dateTime = DateTime.parse(state.newsCategoriesList!.articles![index].publishedAt.toString());
                           return  Padding(
                             padding: const EdgeInsets.only(bottom: 15),
@@ -169,19 +161,13 @@ class _HomeScreenState extends State<HomeScreen> {
                     ) ;
                 }
               },
-
             ),
           )
-
-
         ],
       ),
     );
   }
-
-
 }
-
 
 const spinKit2 = SpinKitFadingCircle(
   color: Colors.amber,

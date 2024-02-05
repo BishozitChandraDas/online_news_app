@@ -9,10 +9,7 @@ import 'package:online_news_app/view/home/widgets/home_app_bar_widget.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
-
-
 import 'package:flutter/material.dart';
-
 import '../../news_detail_screen.dart';
 import '../home_screen.dart';
 
@@ -129,9 +126,7 @@ class HeadlinesWidget extends StatelessWidget {
             ),
           ),
         );
-
       },
-
     );
   }
 }
