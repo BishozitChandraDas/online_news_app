@@ -60,9 +60,9 @@ class Articles {
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
-    if (this.source != null) {
+    if (this.source != null)  {
       data['source'] = this.source!.toJson();
-    }
+    } 
     data['author'] = this.author;
     data['title'] = this.title;
     data['description'] = this.description;
