@@ -5,7 +5,6 @@ import 'package:online_news_app/view/splash_screen.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 void main() {
-  
   runApp(MyApp());
 }
 

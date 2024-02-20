@@ -17,6 +17,7 @@ class NewsDetailScreen extends StatefulWidget {
   State<NewsDetailScreen> createState() => _NewsDetailScreenState();
 }
 
+
 class _NewsDetailScreenState extends State<NewsDetailScreen> {
 
   final format = new DateFormat('MMMM dd,yyyy');
