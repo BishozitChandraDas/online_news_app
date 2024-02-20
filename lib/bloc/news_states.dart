@@ -1,5 +1,4 @@
 import 'package:equatable/equatable.dart';
-
 import '../models/categories_new_model.dart';
 import '../models/news_channel_headlines_model.dart';
 
