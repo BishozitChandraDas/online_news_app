@@ -1,4 +1,4 @@
-*International news app                                                                                                                                                                                         
+*International news app                                                                                                                                                                                          
 *All news category-wise. Like: Sports, general, health, etc.                                                                                                                                                     
 *News connect API integration 
 
